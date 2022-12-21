@@ -30,4 +30,5 @@ export function ShoppingChart({ isOpen }: ShoppingCartProps) {
             </Offcanvas.Body>
         </Offcanvas.Header>
     </Offcanvas>
+    
 }
