@@ -3,6 +3,9 @@ import storeItems from "../data/items.json"
 import { Offcanvas, Stack, Button } from 'react-bootstrap'
 import { formatCurrency } from "../utilities/formatCurrency"
 
+//import {SortableContainer, SortableElement} from 'react-sortable-hoc';
+//import arrayMove from 'array-move';
+
 type CartItemProps = {
     id: number,
     quantity: number

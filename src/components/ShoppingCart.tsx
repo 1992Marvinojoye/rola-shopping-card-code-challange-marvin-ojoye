@@ -10,10 +10,11 @@ type ShoppingCartProps = {
 
 export function ShoppingChart({ isOpen }: ShoppingCartProps) {
     const { closeCart,  cartItems } = useShoppingCart()
-    return <Offcanvas show={isOpen} onHide={closeCart} placement="end">
+    return <Offcanvas show={isOpen} onHide={closeCart} placement="end" >
         <Offcanvas.Header closeButton>
             <Offcanvas.Title>Cart</Offcanvas.Title>
-            <Offcanvas.Body>
+        </Offcanvas.Header>
+        <Offcanvas.Body>
                 <Stack gap={3}>
                     {cartItems.map(item => (
                         <CartItem key={item.id} {...item} />
@@ -27,8 +28,7 @@ export function ShoppingChart({ isOpen }: ShoppingCartProps) {
                     }, 0))}
                 </div>
                 </Stack>
-            </Offcanvas.Body>
-        </Offcanvas.Header>
+        </Offcanvas.Body>
     </Offcanvas>
-    
+
 }

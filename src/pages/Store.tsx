@@ -1,6 +1,9 @@
 import { Col, Row } from "react-bootstrap"
 import storeItems from "../data/items.json"
 import { StoreItem } from "../components/StoreItem";
+import { useState } from "react";
+
+
 
 
 export function Store() {
